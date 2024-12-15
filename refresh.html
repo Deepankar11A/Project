@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refesh</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .container {
+            height: 100px;
+            width: 100px;
+            border: 20px solid white;
+            border-radius: 50%;
+            border-right-color:blue ;
+            border-bottom-color: red;
+            border-top-color: green;
+            border-left-color: blueviolet;
+            animation:spin 0.5s ease infinite;
+
+        }
+        @keyframes spin{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+ <div>
+
+ <div class = "container"></div>
+ </div>
+</body>
+</html>
