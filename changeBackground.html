@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            background-color: pink;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+
+        }
+        button{
+            padding: 50px 100px;
+            border-radius: 60px;
+            font-size: 30px;
+            background-color: antiquewhite;
+            font-style: oblique;
+            
+        
+        }
+        button:hover{
+            transition: 5s ease;
+            transform: translate(360px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <button onclick="changebgcolor()">Click Here</button>
+
+    <script>
+        let colors = ['red','blue','black','yellow','green' , 'crimson' , 'orange', 'skyblue'];
+        let colorindex = 0;
+        function changebgcolor(){
+            
+            document.body.style.backgroundColor = colors[colorindex];
+            
+            colorindex = (colorindex + 1) % colors.length;
+
+
+        }
+
+    </script>
+</body>
+</html>
